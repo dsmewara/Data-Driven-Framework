@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SuiteTwo]">
+  <listeners>
+    <listener class-name="utility.ScreenshotUtility"/>
+  </listeners>
+  <test name="SuiteTwoCaseTwo(failed)">
+    <classes>
+      <class name="SuiteTwo.SuiteTwoCaseTwo">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="checkCaseToRun"/>
+          <include name="reporterDataResults"/>
+          <include name="checkSuiteToRun"/>
+          <include name="SuiteTwoCaseTwoTest" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- SuiteTwo.SuiteTwoCaseTwo -->
+      <class name="SuiteTwo.SuiteTwoCaseOne">
+        <methods>
+          <include name="checkCaseToRun"/>
+          <include name="reporterDataResults"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- SuiteTwo.SuiteTwoCaseOne -->
+    </classes>
+  </test> <!-- SuiteTwoCaseTwo(failed) -->
+</suite> <!-- Failed suite [SuiteTwo] -->
